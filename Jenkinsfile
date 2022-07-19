@@ -5,7 +5,7 @@ pipeline {
         AQUA_BRANCH = "main"
         
         }
-    stgaes {
+    stages {
         stage('Fetch Code from GitHub'){
             steps{
                 timeout (time: 10, unit: 'MINUTES'){
